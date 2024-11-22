@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Limelight';
+    src: url('./fonts/Limelight-Regular.ttf') format('truetype');
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.title{
+    color:#FD0065;
+    text-align: center;
+    font-family: "Limelight";
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-inline: 5rem;
+}
+
+.content{
+    font-family: "Limelight";
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.formulaires {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#canvas {
+    border: solid 0.1rem #FD0065;
+    background-color: #FFE0F4;
+    display: none;
+    max-height: 30rem;
+}
+
+html{
+    background-color: #FFE0F4;
+}
+
+p{
+    /* border: solid 0.1rem #FD0065; */
+    color: #FD0065;
+    width: fit-content;
+    position: relative;
+    margin-left: 1.2rem;
+}
+
+p::before{
+    content: ' ';
+    background-color: #FD0065;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.3rem;
+    left: -1.2rem;
+    border-radius: 50%;
+}
+
+form{
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+}
+
+input{
+    background-color: #FFE0F4;
+    border: 0;
+    padding: 1rem 1rem;
+    outline: none;
+    border: solid 0.1rem #FD0065;
+}
+
+input:focus-visible{
+    background-color: #FF70A9;
+    transition: all 0.2s ease-in;
+}
+
+button{
+    background-color: #FD0065;
+    color: #FFE0F4;
+    padding: 0.5rem 1rem;
+    box-shadow: 10px 5px 5px #FFE0F4;
+    border: solid 0.1rem #FFE0F4;
+    font-family: "Limelight";
+    transition: all 0.2s ease-in;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #FFE0F4 ;
+    color: #FD0065;
+    box-shadow: 10px 5px 5px #FD0065;
+    border: solid 0.1rem #FD0065;
+}
+
