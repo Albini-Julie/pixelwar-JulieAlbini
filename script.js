@@ -26,7 +26,7 @@ canvas.addEventListener('dblclick', (event) => {
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
     const id = `${x},${y}`;
-    const pixelData = { action: 'draw', data: { id, x, y, color: 'white' }, id: pageId };
+    const pixelData = { action: 'draw', data: { id, x, y, color: '#FFE0F4' }, id: pageId };
     if (ws.readyState === WebSocket.OPEN) {
         ws.send(JSON.stringify(pixelData));
     } else {
